@@ -36,6 +36,7 @@ namespace excelGenerator
             InitializeComponent();
             LoadData();
             CreateExcel();
+            FormatTable();
         }
 
         private void LoadData()
@@ -97,19 +98,13 @@ namespace excelGenerator
                 values[counter, 5] = f.NumberOfRooms;
                 values[counter, 6] = f.FloorArea;
                 values[counter, 7] = f.Price;
-                values[counter, 8] = "";
+                values[counter, 8] = "=" + GetCell(counter,7)+ "/" + GetCell(counter, 6);
                 counter++;
             }
 
             xlSheet.get_Range(
             GetCell(2, 1),
             GetCell(1 + values.GetLength(0), values.GetLength(1))).Value2 = values;
-
-            xlSheet.get_Range(
-            GetCell(2, 9),
-            GetCell(1 + values.GetLength(0), values.GetLength(1))).Value2 = values;
-
-            FormatTable();
 
         }
         private string GetCell(int x, int y)
