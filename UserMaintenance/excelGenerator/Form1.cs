@@ -131,7 +131,15 @@ namespace excelGenerator
         
         private void FormatTable()
         {
+            int lastRowID = xlSheet.UsedRange.Rows.Count;
+            int lastColumnID = xlSheet.UsedRange.Columns.Count;
+
+
+            Excel.Range firstColumn = xlSheet.get_Range(GetCell(1, 2), GetCell(lastRowID, 2));
+            Excel.Range LastColumn = xlSheet.get_Range(GetCell(2, lastColumnID), GetCell(lastRowID, lastColumnID));
+            Excel.Range entireTable = xlSheet.get_Range(GetCell(1, 1), GetCell(lastRowID, lastColumnID));
             Excel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
+
             headerRange.Font.Bold = true;
             headerRange.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
             headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
@@ -139,6 +147,17 @@ namespace excelGenerator
             headerRange.RowHeight = 40;
             headerRange.Interior.Color = Color.LightBlue;
             headerRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+
+            entireTable.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+
+            firstColumn.Font.Bold = true;
+            firstColumn.Interior.Color = Color.LightYellow;
+
+            LastColumn.Interior.Color = Color.LightGreen;
+            LastColumn.EntireColumn.NumberFormat = "0.00";
+
+
+
         }
     }
 }
