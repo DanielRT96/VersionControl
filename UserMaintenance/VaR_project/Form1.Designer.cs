@@ -53,11 +53,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(494, 301);
+            this.button1.Location = new System.Drawing.Point(551, 326);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(116, 50);
             this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
+            this.button1.Text = "Save into .csv";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
