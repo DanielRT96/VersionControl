@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserMaintenance", "UserMain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excelGenerator", "excelGenerator\excelGenerator.csproj", "{247BEC05-CB91-4A28-B0FD-9640C03A5BF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaR_project", "VaR_project\VaR_project.csproj", "{8587BE22-ECA3-4FDE-B776-51A9D84A2BB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{247BEC05-CB91-4A28-B0FD-9640C03A5BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{247BEC05-CB91-4A28-B0FD-9640C03A5BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{247BEC05-CB91-4A28-B0FD-9640C03A5BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8587BE22-ECA3-4FDE-B776-51A9D84A2BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8587BE22-ECA3-4FDE-B776-51A9D84A2BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8587BE22-ECA3-4FDE-B776-51A9D84A2BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8587BE22-ECA3-4FDE-B776-51A9D84A2BB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
