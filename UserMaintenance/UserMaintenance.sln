@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaR_project", "VaR_project\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webService", "webService\webService.csproj", "{0B28C1E3-7478-4670-82A0-DFC074003FB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MikroSzimulacio", "MikroSzimulacio\MikroSzimulacio.csproj", "{CC629826-571C-4227-B83D-11B6180D8CA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0B28C1E3-7478-4670-82A0-DFC074003FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B28C1E3-7478-4670-82A0-DFC074003FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B28C1E3-7478-4670-82A0-DFC074003FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC629826-571C-4227-B83D-11B6180D8CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC629826-571C-4227-B83D-11B6180D8CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC629826-571C-4227-B83D-11B6180D8CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC629826-571C-4227-B83D-11B6180D8CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
