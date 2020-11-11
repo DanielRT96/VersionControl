@@ -42,7 +42,7 @@ namespace Factory
             var maxPosition = 0;
             foreach (var ball in _balls)
             {
-                ball.MoveBall();
+                ball.MoveToy();
                 if (ball.Left > ball.Right)
                 {
                     maxPosition = ball.Left;
