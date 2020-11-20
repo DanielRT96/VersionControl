@@ -12,7 +12,6 @@ namespace UnitTestExample.Test
         [Test]
         public void TestValidateEmail(string email, bool expectedResult)
         {
-            // Arrange
             var accountController = new AccountController();
 
             // Act
