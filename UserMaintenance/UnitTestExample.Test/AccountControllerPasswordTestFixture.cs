@@ -8,26 +8,28 @@ using UnitTestExample.Controllers;
 
 namespace UnitTestExample.Test
 {
-    public class AccountControllerTestFixture
+    class AccountControllerPasswordTestFixture
     {
         [
             Test,
-            TestCase("abcd1234", false),
-            TestCase("irf@uni-corvinus", false),
-            TestCase("irf.uni-corvinus.hu", false),
-            TestCase("irf@uni-corvinus.hu", true)
+            TestCase("asd", false),
+            TestCase("ASD123", false),
+            TestCase("asd123", false),
+            TestCase("rOvId1", false),
+            TestCase("rOvId123", true)
         ]
-        public void TestValidateEmail(string password, bool expectedResult)
+        public void TestValidatePassword(string email, bool expectedResult)
         {
             // Arrange
             var accountController = new AccountController();
 
             // Act
-            var actualResult = accountController.ValidateEmail(password);
+            var actualResult = accountController.ValidatePassword(email);
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
 
         }
     }
+}
 }
