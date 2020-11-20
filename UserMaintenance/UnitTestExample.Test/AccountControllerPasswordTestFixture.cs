@@ -8,7 +8,7 @@ using UnitTestExample.Controllers;
 
 namespace UnitTestExample.Test
 {
-    class AccountControllerPasswordTestFixture
+    public class AccountControllerPasswordTestFixture
     {
         [
             Test,
