@@ -27,12 +27,22 @@ namespace EvolutionAlgorithm
             ga = gc.ActivateDisplay();
             this.Controls.Add(ga);
 
+            gc.GameOver += Gc_GameOver;
+
             for (int i = 0; i < populationSize; i++)
             {
                 gc.AddPlayer(nbrOfSteps);
 
             }
             gc.Start(true);
+        }
+
+        private void Gc_GameOver(object sender)
+        {
+            generation++;
+            label1.Text = string.Format(
+                "{0}. generáció",
+                generation);
         }
     }
 }
